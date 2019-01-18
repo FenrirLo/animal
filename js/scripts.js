@@ -1,24 +1,22 @@
 $(document).ready(function() {
-  $("form#insurance").submit(function(event) {
+  $("form#quiz").submit(function(event) {
     var age = parseInt($("input#age").val());
-    var gender = $("select#gender").val();
+    var boat = $("select#boat").val();
+    var shoes = $("select#shoes").val();
 
     if (age) {
-      var quote = (100 - age) * 3;
-      if (gender === 'male' && age < 26) {
-          quote += 50; }
-      if (age < 16) {
-        alert("You must be at least 16 to have a driver's license.")
-      }
+      var quote = ("#ncbunny");
+      if (boat === 'yes' && age < 25 < 35);
 
-    $("#rate").empty().append(quote);
-    $("#quote").show();
-
-    $("rate").empty().append(quote);
-    $("#quote").show();
-  } else {
-    alert('Please enter your age.');
-  }
+      // if (boat) {
+      //   var quote = ncbunny;
+      //   if (quote === "yes" && shoes === "boots";
+      //   }
+      $("#rate").empty().append();
+      $("#quote1").show();
+    } else {
+      alert('Please enter your age.');
+    }
 
     event.preventDefault();
   });
